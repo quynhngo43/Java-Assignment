@@ -67,17 +67,17 @@ public class Main {
     }
 
     public static void main(String[] args) {
-//        if (args[0] == "readfile" && args[1] == "jsongen") {
+        if (args[0] == "readfile" && args[1] == "jsongen") {
             readFile();
             dataHandling();
             jsonFileCreating();
-//        }
-//        else if (args[0] == "readfile") {
-//            readFile();
-//            dataHandling();
-//        }
-//        else if (args[0] == "jsongen") {
-//            jsonFileCreating();
-//        }
+        }
+        else if (args[0] == "readfile") {
+            readFile();
+            dataHandling();
+        }
+        else if (args[0] == "jsongen") {
+            jsonFileCreating();
+        }
     }
 }
