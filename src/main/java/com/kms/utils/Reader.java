@@ -1,15 +1,16 @@
 package com.kms.utils;
-
+import com.opencsv.CSVReader;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CSVReader {
+public class Reader {
     private static List<String[]> rawData = new ArrayList<>();
-    public static void ReaderCSV(String path) {
+    public static void ReadCSV(String path) {
         try {
-            com.opencsv.CSVReader reader = new com.opencsv.CSVReader(new FileReader(path));
+            CSVReader reader = new CSVReader(new FileReader(path));
             rawData = reader.readAll();
+            reader.close();
         }
         catch(Exception e) {
             System.out.println(e);

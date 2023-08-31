@@ -5,6 +5,7 @@ import com.opencsv.CSVReader;
 import java.io.FileReader;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import org.json.simple.JSONArray;
@@ -67,17 +68,19 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        if (args[0] == "readfile" && args[1] == "jsongen") {
-            readFile();
-            dataHandling();
-            jsonFileCreating();
-        }
-        else if (args[0] == "readfile") {
-            readFile();
-            dataHandling();
-        }
-        else if (args[0] == "jsongen") {
-            jsonFileCreating();
-        }
+//        System.out.println(Arrays.toString(args));
+//        if (args[0] == "all") {
+        readFile();
+        dataHandling();
+        jsonFileCreating();
+//        }
+//        else if (args[0] == "readfile") {
+//            readFile();
+//            dataHandling();
+//        }
+//        else if (args[0] == "jsongen") {
+//            jsonFileCreating();
+//        }
+//    }
     }
 }
