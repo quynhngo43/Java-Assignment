@@ -8,10 +8,10 @@ import org.junit.Test;
 
 
 public class FilterQuestionsTest {
+    private final static String DATA_PATH = "src/test/resources/testdata/input/DataCollection.csv";
+    private final static String TARGET_PATH = "src/test/resources/testdata/output/Output.json";
     @Test
     public void main() {
-        final String DATA_PATH = "src/test/resources/testdata/input/DataCollection.csv";
-        final String TARGET_PATH = "src/test/resources/testdata/output/Output.json";
 
         Reader.ReadCSV(DATA_PATH);
         FilterQuestions.ProcessData();
